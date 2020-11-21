@@ -1,0 +1,24 @@
+.movie{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    color: #ffffff;
+    padding: 20px;
+    height: 300px;
+    background-size: cover;
+    border-radius: 15px;
+
+    &__title{
+        font-size: 1rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    &__desc{
+        font-size: 0.7rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
