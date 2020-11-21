@@ -1,5 +1,6 @@
 import React, { lazy } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import PrivateRoute from 'components/PrivateRoute/PrivateRoute';
 
 // Lazy Components
 const Error404 = lazy(() => import('components/Error404/Error404'));
@@ -13,12 +14,12 @@ const ShowMovie = lazy(() => import('pages/ShowMovie/ShowMovie'));
 const Routes = (
     <Switch>
 
-        <Route path="/" exact component={Movies} />
+        <PrivateRoute path="/" exact component={Movies} />
         <Route path="/login" exact component={Login} />
         <Route path="/register" exact component={Register} />
-        <Route path="/watch_list" exact component={WatchList} />
-        <Route path="/movies" exact component={Movies} />
-        <Route path="/movies/:id" exact component={ShowMovie} />
+        <PrivateRoute path="/watch_list" exact component={WatchList} />
+        <PrivateRoute path="/movies" exact component={Movies} />
+        <PrivateRoute path="/movies/:id" exact component={ShowMovie} />
         
         {/* General Routes */}
         <Route path="*" component={Error404} />
