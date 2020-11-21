@@ -26,14 +26,15 @@ export default function Login() {
         // If Real API Working
         // axios.post(``, requestBody)
         //     .then(res => {
-        //         history.push('/home')
+        //         history.push('/')
         //     })
         //     .catch(err => {
                 
         //     })
         
         // Dummy login
-        dispatch({type: "Auth_Login", isAuth: true})
+        dispatch({ type: "Auth_Login", isAuth: true })
+        history.push('/')
     }
     
 
