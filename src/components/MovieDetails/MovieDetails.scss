@@ -1,0 +1,21 @@
+.movie-details{
+
+    &__img{
+        margin-top: 2rem;
+        border-radius: 1rem;
+        height: 40vh;
+        padding-top: 30vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__title{
+        font-size: 4rem;
+        margin-top: 2rem;
+    }
+
+    &__desc{
+        font-size: 1rem;
+        color: gray;
+    }
+}
